@@ -12,7 +12,7 @@ class Collection(ABC):
         pass
 
     @abstractmethod
-    def pop(self):
+    def get(self):
         """Remove and return the item from the collection."""
         pass
 
