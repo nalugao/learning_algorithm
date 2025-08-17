@@ -1,7 +1,10 @@
-from structs.abstract import Collection
+class Stack:
 
-
-class Stack(Collection):
+    def __init__(self):
+        self._items = []
+    
+    def __bool__(self):
+        return len(self._items) > 0
     
     def add(self, item):
         self._items.append(item)

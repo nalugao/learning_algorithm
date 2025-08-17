@@ -1,8 +1,11 @@
-from structs.abstract import Collection
-
-
-class Queue(Collection):
+class Queue():
     
+    def __init__(self):
+        self._items = []
+    
+    def __bool__(self):
+        return len(self._items) > 0
+
     def add(self, item):
         self._items.append(item)
 
