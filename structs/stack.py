@@ -7,5 +7,7 @@ class Stack(Collection):
         self._items.append(item)
 
     def get(self):
-        self._items.pop()
+        last_item = self._items.pop()
+        return last_item
+        
 

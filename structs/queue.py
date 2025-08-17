@@ -7,4 +7,5 @@ class Queue(Collection):
         self._items.append(item)
 
     def get(self):
-        self._items.pop(0)
+        first_item = self._items.pop(0)
+        return first_item
